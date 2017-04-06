@@ -67,10 +67,11 @@
     background-color: #2b4ac0;
   }
 }
+
 body {
   background-color: rgb(116, 208, 241);
 }
-#about {
+#about-pan {
   display: flex;
 }
 
@@ -80,10 +81,10 @@ body {
   font-size: 1.7rem;
 }
 
-#first-zone {
+#about {
   background-color: #CCCCCC;
 }
-#contact-me-zone {
+#contact {
   background-color: #CCCCCC;
 }
 .affix {
