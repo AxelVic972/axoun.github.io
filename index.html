@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="portfolioApp">
+  <head>
+    <meta charset="UTF-8">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="css/app.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body >
+    <div id="presentation" class="container-fluid text-center bg-1">
+      <div class="vcenter-title">
+        <h1>Axel VICTORIN</h1>
+        <h2>Etudiant SUPINFO</h2>
+        <p><a href="github.com/Axoun"><i class="fa fa-github"></i></a>  <a href="https://www.linkedin.com/in/axel-victorin-884874112/"><i class="fa fa-linkedin-square"></i></a>  <a href="mailto:204252@supinfo.com"><i class="fa fa-envelope"></i></a></p>
+      </div>
+    </div>
+    <div id="projects" class="bg-2">
+      <div class="text-center">
+        <h3>Projets</h3>
+      </div>
+      <div class="container-fluid" ng-controller="projectController">
+        <div ng-repeat="project in projects">
+          <div class="panel panel-default">
+            <div class="row">
+              <div class="col-md-3">
+                <img class="center-block" src={{project.imageLink}} height="300" width="300" alt="coming soon" />
+              </div>
+              <div class="col-md-9 vcenter">
+                <h4>{{project.name}}</h4>
+                <p>{{project.description}}</p>
+                <p><strong>Technologies utilisés :</strong>
+                <p><span id="tech" ng-repeat="tech in project.technologies">{{tech}}</span></p>
+                <button id="link" class="btn btn-default pull-right"><a href="{{project.link}}">Link</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer" class="bg-3 text-center vcenter-bottom">
+      <p>&copy Licence MIT</p>
+    </div>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
