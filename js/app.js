@@ -5,7 +5,7 @@ var ProjectController = function($scope){
     name: "Ce portfolio",
     description: "Ce portfolio a été réalisé avec Bootstrap et AngularJS pour la gestion" +
       " de la section projets.",
-    technologies: ["HTML", "CSS", "Bootstrap", "AngularJS", "JQuery", "Sass"],
+    technologies: ["HTML", "CSS", "Bootstrap", "AngularJS", "Sass"],
     imageLink: "img/site2-portfolio.png",
     link: "#"
   },{
