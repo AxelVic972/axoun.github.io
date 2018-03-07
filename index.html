@@ -32,7 +32,7 @@
                 <p>{{project.description}}</p>
                 <p><strong>Technologies utilisés :</strong>
                 <p><span id="tech" ng-repeat="tech in project.technologies">{{tech}}</span></p>
-                <button id="link" class="btn btn-default pull-right"><a href="{{project.link}}">Link</a></button>
+                <button ng-if="project.link != null" id="link" class="btn btn-default pull-right"><a href="{{project.link}}">Link</a></button>
               </div>
             </div>
           </div>
